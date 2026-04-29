@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | Currency Exchange</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+       <img src="assets/logo.png" controls height="100" width="100">
+      <span>CurrencyX</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="converter.html">🔄 Converter</a></li>
+      <li><a href="details.html">📊 Details</a></li>
+      <li><a href="history.html">📜 History</a></li>
+      <li><a href="settings.html" class="active">⚙️ Settings</a></li>
+    </ul>
+ 
+  </nav>
+
+  <!-- Back to Home Button -->
+  <div class="back-nav">
+    
+  </div>
+
+  <main class="container">
+    <h1>Settings ⚙️</h1>
+    
+    <div class="settings-section">
+      <label>🌓 Dark/Light Mode</label>
+      <button id="settingsThemeToggle" class="secondary-btn">Toggle Theme</button>
+      <small>Current: <span id="themeStatus">Light</span></small>
+    </div>
+
+    <div class="settings-section">
+      <label>💰 Default Currency</label>
+      <select id="defaultCurrency" class="currency-select">
+        <option value="USD">🇺🇸 USD - US Dollar</option>
+        <option value="EUR">🇪🇺 EUR - Euro</option>
+        <option value="GBP">🇬🇧 GBP - British Pound</option>
+        <option value="RWF">🇷🇼 RWF - Rwandan Franc</option>
+      </select>
+      <small>This will be preset in converter</small>
+    </div>
+
+    <div class="settings-section">
+      <label>🌐 Language</label>
+      <select id="language">
+        <option value="en">🇬🇧 English</option>
+        <option value="rw">🇷🇼 Kinyarwanda</option>
+      </select>
+    </div>
+
+    <div class="settings-section">
+      <label>💾 Data Management</label>
+      <button id="exportDataBtn" class="secondary-btn">📤 Export History</button>
+      <button id="importDataBtn" class="secondary-btn">📥 Import History</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+   
+    <p class="copy">© 2026 CurrencyX - All Rights Reserved</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversion History | Currency Exchange</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" controls height="100" width="100">
+      <span>CurrencyX</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="converter.html">🔄 Converter</a></li>
+      <li><a href="details.html">📊 Details</a></li>
+      <li><a href="history.html" class="active">📜 History</a></li>
+      <li><a href="settings.html">⚙️ Settings</a></li>
+    </ul>
+    
+  </nav>
+
+  <!-- Back to Home Button -->
+  <div class="back-nav">
+    
+  </div>
+
+  <main class="container">
+    <h1>Conversion History 📜</h1>
+    
+    <div class="history-stats">
+      <p id="historyCount">0 conversions saved</p>
+    </div>
+
+    <div class="history-filters">
+      <select id="historyFilter">
+        <option value="all">🌍 All Currencies</option>
+        <option value="USD">🇺🇸 USD</option>
+        <option value="EUR">🇪🇺 EUR</option>
+        <option value="GBP">🇬🇧 GBP</option>
+        <option value="RWF">🇷🇼 RWF</option>
+      </select>
+      <button id="clearHistoryBtn" class="danger-btn">🗑️ Clear All History</button>
+    </div>
+    
+    <ul id="historyList" class="history-list"></ul>
+  </main>
+
+  <footer class="footer">
+   
+    <p class="copy">© 2026 CurrencyX - All Rights Reserved</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

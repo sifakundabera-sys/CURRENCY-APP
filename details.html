@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Details | Currency Exchange</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+       <img src="assets/logo.png" controls height="100" width="100">
+      <span>CurrencyX</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="converter.html">🔄 Converter</a></li>
+      <li><a href="details.html" class="active">📊 Details</a></li>
+      <li><a href="history.html">📜 History</a></li>
+      <li><a href="settings.html">⚙️ Settings</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- Back to Home Button -->
+  <div class="back-nav">
+    <a href="index.html" class="back-home-btn">← Back to Home</a>
+    <a href="converter.html" class="back-home-btn">← Back to Converter</a>
+  </div>
+
+  <main class="container">
+    <h1>Currency Details</h1>
+    <select id="detailCurrency" class="currency-select">
+      <option value="USD">🇺🇸 USD - US Dollar</option>
+      <option value="EUR">🇪🇺 EUR - Euro</option>
+      <option value="GBP">🇬🇧 GBP - British Pound</option>
+      <option value="RWF">🇷🇼 RWF - Rwandan Franc</option>
+    </select>
+
+    <div class="currency-info">
+      <h2 id="currencyName">US Dollar</h2>
+      <p><strong>Symbol:</strong> $</p>
+      <p><strong>Code:</strong> USD</p>
+      <p><strong>Country:</strong> United States</p>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="rateChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="comparison-table">
+      <h3>Comparison with other currencies</h3>
+      <table id="comparisonTable"></table>
+    </div>
+
+    <div class="historical-rates">
+      <h3>Historical Rates (Mock Data)</h3>
+      <ul id="historicalList"></ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="converter.html">Converter</a>
+      <a href="details.html">Details</a>
+      <a href="history.html">History</a>
+      <a href="settings.html">Settings</a>
+    </div>
+    <p class="copy">© 2026 CurrencyX - All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

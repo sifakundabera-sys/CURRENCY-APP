@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Currency Exchange</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+       <img src="assets/logo.png" controls height="100" width="100">
+      <span>CurrencyX</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="converter.html">Converter</a></li>
+      <li><a href="details.html">Details</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+    
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Fast & Secure Currency Exchange</h1>
+      <p>Get real-time rates for USD, EUR, GBP, RWF and 150+ currencies</p>
+      <a href="converter.html" class="cta-btn">Convert Now →</a>
+    </section>
+
+    <section class="quick-converter">
+      <h2>Quick Converter</h2>
+      <div class="converter-box">
+        <input type="number" id="quickAmount" placeholder="Enter amount" value="1">
+        <select id="quickFrom">
+          <option value="USD">🇺🇸 USD - US Dollar</option>
+          <option value="EUR">🇪🇺 EUR - Euro</option>
+          <option value="GBP">🇬🇧 GBP - British Pound</option>
+          <option value="RWF">🇷🇼 RWF - Rwandan Franc</option>
+        </select>
+        <button id="quickSwapBtn">↔️ Swap</button>
+        <select id="quickTo">
+          <option value="RWF">🇷🇼 RWF - Rwandan Franc</option>
+          <option value="USD">🇺🇸 USD - US Dollar</option>
+          <option value="EUR">🇪🇺 EUR - Euro</option>
+          <option value="GBP">🇬🇧 GBP - British Pound</option>
+        </select>
+        <button id="quickConvertBtn">Convert</button>
+        <div id="quickResult" class="result"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
