@@ -1,3 +1,6 @@
+  NAME of student: 
+1.KUNDABERA sifa
+
 XE-CLONE-CURRENCY-APP:
 this app is made to satcfy users and help them to convert
 there different currencies in forms that they need online
